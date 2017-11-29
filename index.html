@@ -1,95 +1,313 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Reaction Timer</title>
-<style type="text/css">
-#shape
-{
-width:200px;
-height:200px;
-background-color:red;
-display:none;
-position:relative;
-}
-body{
-font-family:sans-serif;
-}
-.bold{
-font-weight:bold;
-}
-</style>
+  <title>My BBC clone</title>
+  <head>
+  <style type="text/css">
+  #topbar{
+  width: 1530px;
+  height: 40px;
+  background-color:black;
+  padding:0;
+  margin:0;
+  
+  }
+   body{
+   margin:0;
+   padding:0;
+  
+  font-family: Helvetica, Arial, sans-serif;
+  }
+  #logo{
+  margin: 9px 20px 9px 130px;
+  width: 100px;
+  float:left;
+  position:relative;
+  top: -3px;  
+  }
+  .topbarsec{
+  float:left;
+  border-left: 1px #CCCCCC solid;
+  height: 100%;
+  }
+  
+  #slogo{
+  margin-top:10px;
+  margin-bottom:10px;
+  margin-left:10px;
+  margin-right:0; 
+  width:25px;
+  float:left;
+  position:relative;
+  top:-2px;
+  }
+  #tsign{
+  font-weight:bold;
+  font-size:90%;
+  position:relative;
+  top:14px;
+  color:white;
+  padding-right:50px;
+  position:relative;
+  top:9px;
+  }
+  .text{
+  color:white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight:bold;
+  padding:13px 15px 0 15px;
+  font-size:90%;
+  height:27px;
+  }
+  #arrow{
+    padding-top:8px;
+    margin:0;
+	width:10px;
+	position:relative;
+	left:1050px;
+	top:-40px;
+	
+	 }
+	 
+	 .margin{
+	 position:relative;
+	 left:1080px;
+	 top:-74px;
+	 height:100%;
+	}
+	.search{
+	position:relative;
+    left:1110px;
+	top:-108px;
+	float:left;
+	background-color:#FFFFFF;
+	font-weight:bold;
+	}
+	.mg{
+	height:18px;
+    float:right;
+	position:relative;
+	left:-3px;
+	top:1px;
+	}
+	#page-container{
+	width:1530px;
+	height:460px;
+	background-color:#E7E8E1;
+	position:relative;
+	top:-20px;
+	}
+   .left{
+     color:#4A4A4A;
+	 font-family:Arial,sans-serif;
+	 font-size:130%;
+	 position:relative;
+	 top:30px;
+	 left:140px;
+	 }
+	 .right{
+	 color:#4A4A4A;
+	 font-family:Arial,sans-serif;
+	 font-size:130%;
+	 position:relative;
+	 top:-10px;
+	 left:1100px;
+	 }
+	 #i1{
+	 position:relative;
+	 left:140px;
+	 top:-20px;
+	 width:41%;
+	 
+	 }
+	#i2{
+	position:relative;
+	left:160px;
+	top:-201px;
+	width:20%;
+	}
+	#i3{
+	position:relative;
+	left:-150px;
+	top:-23px;
+	width:20%;
+	}
+	#i4{
+	position:relative;
+	left:1117px;
+	top:-383px;
+	width:20%;
+	}
+	#i5{
+	width:20%;
+	position:relative;
+	left:807px;
+	top:-200px;
+	}
+	#i6{
+	position:relative;
+	left:-485px;
+	top:-100px;
+	}
+	h1{
+	color:#363636;
+	font-family:Arial,sans-serif;
+	position:relative;
+	left:160px;
+	top:-160px;
+    font-weight:bold;
+	}
+	a{
+	text-decoration:none;
+	}
+	#i7{
+	width:30%;
+	position:relative;
+	left:110px;
+	top:-170px;
+	padding:0;
+	}
+	#i8{
+	width:30%;
+	position:relative;
+	top:-475px;
+	left:520px;
+	}
+	#i9{
+	width:30%;
+	position:relative;
+	top:-780px;
+	left:930px;
+	}
+	.t1{
+	color:#363636;
+	font-family:Arial,sans-serif;
+	font-weight:bold;
+	font-size:20px;
+	
+	}
+	.t{
+	color: #666666;
+	}
+	
+   </style>
+  </head>
+  <body>
+  <div id="topbar">
+  <img id="logo"src="bbc logo.png">
+  
+        <div id="signin"class="topbarsec">
+		<img src="signin.png"id="slogo">
+		<span id="tsign">Sign in</span>
+		</div>
+		    <div class="topbarsec text">
+		     Home
+		    </div>
+             <div class="topbarsec text">
+		     News
+		    </div>
+			 <div class="topbarsec text">
+		     Sport
+		    </div>
+             <div class="topbarsec text">
+		     Weather
+		    </div>
+			 <div class="topbarsec text">
+		     Shop
+		    </div>
+			 <div class="topbarsec text">
+		     Earth
+		    </div>
+			 <div class="topbarsec text">
+		     Travel
+		    </div>
+			 <div class="topbarsec text">
+		     Capital
+		    </div>
+			 <div class="topbarsec text">
+		     More
+		    </div>
+			<div id="arrow">
+			<img src="darrow.png">
+			</div>
+			<div>
+			<img src="mar.png"class="margin">
+			</div>
+			<div class="search">
+			<input type="text"value="Search">
+			<input type="image"src="mg.png"class="mg">
+			</div>
+	</div>
+			<div class="clear"></div>
+			<div id="page-container">
+			
+			    
+				<p class="left">Welcome to BBC.com</p>
+				<p class="right">Friday, 9 June</p>
+				<a href="">
+				<img src="i1.png"id="i1">
+				</a>
+				<a href="">
+				<img src="i2.png"id="i2">
+				</a>
+				<a href="">
+				<img src="i3.png"id="i3">
+				</a>
+				<a href="">
+				<img src="i4.png"id="i4">
+				</a>
+				<a href="">
+				<img src="i5.png"id="i5">
+				</a>
+				<a href="">
+				<img src="i6.png"id="i6">
+				</a>
+				<a href="">
+				<h1>News</h1>
+				</a>
+				<div>
+				<div id="i7">
+				<figure>
+				<img src="i7.png">
+				<figcaption class="t1">Just catching up. Here's how the night went</figcaption>
+				<figcaption><br></figcaption>
+				<figcaption class="t">If you are just waking up,here's what you missed.</figcaption>
+				</figure>
+				</div>
+				 <div id="i8">
+				<figure>
+				<img src="i8.png">
+				<figcaption class="t1">What does result mean for Brexit?</figcaption>
+				<figcaption><br><figcaption>
+				<figcaption class="t">The UK's political upheaval doesnot augur well for its tough EU exit talks,Katya Adler writes</figcaption>
+				</figure>
+				</div>
+				 <div id="i9">
+				<figure>
+				<img src="i9.png">
+				<figcaption class="t1">IS suicide bomb kills atleast 20 in Iraq</figcaption>
+				<figcaption><br></figcaption>
+				<figcaption class="t">The attack hit market in atown near the Shia holy city of Karbala</figcaption>
+				</figure>
+				</div>
+				
+				
+				
+				
+				
+			
+				
 
-
-</head>
-<body>
-<h1>Test Your Reactions!</h1>
-<p>Click on the boxes and circles as quickly as you can<p>
-<p class="bold">Your time:<span id="time"></span></p>
-<p class="bold">Quickest time:<span id="quick"></span></p>
-<div id="shape"></div>
-<script type="text/javascript">
-var start=new Date().getTime();
- function getRandomColor() {
-        var letters = '0123456789ABCDEF';
-        var color = '#';
-        for (var i = 0; i < 6; i++ ) {
-            color += letters[Math.floor(Math.random() * 16)];
-        }
-        return color;
-    }
-
-function makeAppear(){
-
-var top= Math.random() * 400;
-var left= Math.random() * 400;
-var width= (Math.random() * 200) + 100;
-if(Math.random() > 0.5)
-{
-document.getElementById("shape").style.borderRadius="50%";
-}
-else{
-document.getElementById("shape").style.borderRadius="0";
-}
-document.getElementById("shape").style.backgroundColor = getRandomColor();
-document.getElementById("shape").style.top= top +"px";
-document.getElementById("shape").style.left= left + "px";
-document.getElementById("shape").style.width= width + "px";
-document.getElementById("shape").style.height= width + "px";
-
-
-
-document.getElementById("shape").style.display="block";
-start=new Date().getTime();
-}
-function appearAfterDelay()
-{
-setTimeout(makeAppear, Math.random() * 2000);
-}
-appearAfterDelay();
-var fastest=1000;
-document.getElementById("shape").onclick=function()
-{
-document.getElementById("shape").style.display="none";
-var end =new Date().getTime();
-var time=(end-start)/1000;
-document.getElementById("time").innerHTML=time+"s";
-if(time<fastest)
-{
-fastest=time;
-document.getElementById("quick").innerHTML =fastest+"s";
-}
-else{
-document.getElementById("quick").innerHTML =fastest+"s";
-}
-
-appearAfterDelay();
-}
-</script>
-
-
-
-
-
-
-</body>
-</html>
+			
+			
+		
+			
+  
+  
+  
+  
+  </body>
+  </html>
+  
+  
+  
